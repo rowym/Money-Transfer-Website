@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Withdraw</title>
+  <link rel="stylesheet" type="text/css" href="D:\eT3\Money Transfer Website\css\transfer&deposit&withdraw.css">
+  <script src="D:\eT3\Money Transfer Website\javascript\script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="D:\eT3\Money Transfer Website\images\logo.png" alt="My Money Transfer Logo">
+      </div>
+    <nav>
+      <ul>
+        <li><a href="D:\eT3\Money Transfer Website\html\about.html">About Us</a></li>
+        <li><a href="D:\eT3\Money Transfer Website\html\ourservices.html">Our Services</a></li>
+        <li><a href="D:\eT3\Money Transfer Website\html\dashboard.html">Dashboard</a></li>
+        <li><a href="D:\eT3\Money Transfer Website\html\home.html">LogOut</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Withdraw</h1>
+
+    <form onsubmit="withdraw(event)">
+      <label for="amount">Amount:</label>
+      <input type="number" id="withdrawAmount" placeholder="Enter the amount" required>
+      <br>
+      <button onclick="withdrawMoney()">Withdraw</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+</body>
+</html>
